@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
  
  
  function getMain() {
-    window.location.href = "funfacts.html"
+    window.location.href = "pageDirectory.html"
  }
  
  
