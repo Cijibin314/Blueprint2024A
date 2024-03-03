@@ -43,7 +43,7 @@ let listOfScores = []
 async function evaluateScore(id){
     console.log("input id:    " + id)
     
-    getData(id).then((data)=>{
+    const data = await getData(id);
     let score = 0;
     // checks
     if(data["watering"] === "Frequent"){
@@ -74,11 +74,11 @@ async function evaluateScore(id){
     score += 1
     score -= 1
     return score;
-    })
     
 }
-function evaluateScoreFinal(name){
-    const result = evaluateScore(getId(name))
+async function evaluateScoreFinal(name){
+    const result = await evaluateScore(getId(name))
+    console.log(result)
     setTimeout(()=>{console.log(result)},5000)
     return result
 }
