@@ -4,10 +4,14 @@ body{
 
 h1.header{
     text-align: center;
+    background-color: #1a7e0fce;
 }
 
 p.desc{
     text-align: center;
+    background-color : #1a7e0fce;
+    border-radius: 12px;
+    font-size : 20px
 }
 
 div.input{
@@ -22,13 +26,13 @@ a.l1{
    background-color: whitesmoke;
    border-color: black;
    position : absolute;
-   top:35px;
+   top:183px;
    right:0px;
 }
 
 button.linkPrompt{
     position : absolute;
-    top:0px;
+    top:150px;
     right:0px;
     font-size : 24px;
 }
