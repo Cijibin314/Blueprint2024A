@@ -108,13 +108,8 @@ async function fillObj(){
         myNamesToIds[i + 1] = names
     }
 }
-setTimeout(()=>{/*fillObj()*/},200)
-
-/*const button = document.getElementById("button")
-
-button.addEventListener('click', function() { 
-    document.getElementById("output").innerHTML = evaluateScoreFinal(document.getElementById("f1"))
-});*/
-async function showOutput(){
+setTimeout(()=>{fillObj()},200)
+async function doUpdate(){
+    
     document.getElementById("output").innerHTML = await evaluateScoreFinal(document.getElementById("f1"))
 }
