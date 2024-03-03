@@ -1,48 +1,47 @@
-body{
-    /*
-    background-color : #09ad35;
-    */
-    background-image: url("https://s3.amazonaws.com/assets.cce.cornell.edu/slides/6250/image/sized/lawn.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: bottom;
-    background-attachment: fixed;
-}
-
-h1.header{
-    text-align: center;
-    background-color : green;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 20px;
-}
-
-p.desc{
-    text-align: center;
-    background-color : #1a7e0fce;
-    border-radius: 22px;
-    font-size : 20px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div.input{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
 input.f1{
     padding: 12px 15px;
+    margin-bottom: 0;
 }
 
 input.f2{
     padding: 12px 15px;
+    margin-bottom:0 ;
 }
 
-input.f3{
+h4.p3{
+margin-bottom: 0;
+}
+div.drop{
     padding: 12px 15px;
+    text-align: center;
+margin-bottom:0;
+
+}
+div.f3{
+    padding: 12px 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+select.options{
+    padding: 12px 50px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+
+option.tropical{
+    padding: 12px 50px;
+    font-size: 15px;
+}
+
+option.polar{
+    padding: 12px 50px;
+    font-size: 15px;
 }
 
 button.button{
-    padding: 12px 30px;
+    padding: 12px 60px;
 }
 div.buttonHolder{
     text-align: center;
