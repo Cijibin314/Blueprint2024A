@@ -1,1 +1,34 @@
+body{
+    background-color : #09ad35;
+}
 
+h1.header{
+    text-align: center;
+}
+
+p.desc{
+    text-align: center;
+}
+
+div.input{
+    text-align: center;
+}
+
+div.buttonHolder{
+    text-align: center;
+}
+
+a.l1{
+   background-color: whitesmoke;
+   border-color: black;
+   position : absolute;
+   top:35px;
+   right:0px;
+}
+
+button.linkPrompt{
+    position : absolute;
+    top:0px;
+    right:0px;
+    font-size : 24px;
+}
