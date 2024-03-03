@@ -1,0 +1,38 @@
+body{
+    background-color : #09ad35;
+}
+
+h1.header{
+    text-align: center;
+    background-color: #1a7e0fce;
+}
+
+p.desc{
+    text-align: center;
+    background-color : #1a7e0fce;
+    border-radius: 12px;
+    font-size : 20px
+}
+
+div.input{
+    text-align: center;
+}
+
+div.buttonHolder{
+    text-align: center;
+}
+
+a.l1{
+   background-color: whitesmoke;
+   border-color: black;
+   position : absolute;
+   top:183px;
+   right:0px;
+}
+
+button.linkPrompt{
+    position : absolute;
+    top:150px;
+    right:0px;
+    font-size : 24px;
+}
