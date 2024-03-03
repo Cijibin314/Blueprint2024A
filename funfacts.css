@@ -1,77 +1,91 @@
 body {
-    background-color: rgb(166, 249, 159);
- }
- 
- 
- .title {
-    font-size: 50px;
-    letter-spacing: 7px;
-    font-family: 'Courier New', Courier, monospace;
- }
- 
- 
- .body-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    color: green;
-    font-family: 'Monospace';
- }
- 
- 
- p {
-    color: green;
-    font-family: helvetica;
-    font-size: 1.5rem;
-    /* animation-name: color-change;
-    animation-duration: 3s; */
- }
-  .fun-facts{
-    font-weight: bold;
-    font-size: 2rem;
-    color: cyan;
- }
- 
- 
- .button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: green
- }
-  #submit {
-    background-color: #abefff;
-    padding: 10px;
-    margin: 0px 5px;
-    border-radius: 10px;
- }
-  #random {
-    animation-name: color-change;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    padding: 10px;
-    margin: 0px 5px;
-    border-radius: 10px;
- }
-  #submit:hover {
-    background-color: #5cbcd2;
-    cursor: pointer;
- }
-  #random:hover {
-    cursor: pointer;
-    background-color: #df7df7;
- }
- 
- 
- 
- 
- 
- 
- @keyframes color-change {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
- }
+   background-color: rgb(166, 249, 159);
+}
+
+
+.title {
+   font-size: 50px;
+   letter-spacing: 7px;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+.body-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px;
+   color: green;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+p {
+   color: green;
+   font-family: helvetica;
+   font-size: 1.5rem;
+   /* animation-name: color-change;
+   animation-duration: 3s; */
+}
+ .fun-facts{
+   font-weight: bold;
+   font-size: 2rem;
+   color: cyan;
+}
+
+
+.button {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: green
+}
+ #submit {
+   background-color: #b2f5c3;
+   padding: 10px;
+   margin: 0px 5px;
+   border-radius: 10px;
+}
+ #random {
+   animation-name: color-change;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   padding: 10px;
+   margin: 0px 5px;
+   border-radius: 10px;
+}
+ #submit:hover {
+   background-color: #87e49d;
+   cursor: pointer;
+}
+ #random:hover {
+   cursor: pointer;
+   background-color: #df7df7;
+}
+
+
+
+
+
+
+@keyframes color-change {
+   0%   {background-color: red;}
+   25%  {background-color: yellow;}
+   50%  {background-color: blue;}
+   100% {background-color: green;}
+}
+
+
+.resources {
+   display: block;
+   background-color: #e7efe6;
+   color: #000;
+   padding: 20px;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   text-decoration: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   font-family:Arial, Helvetica, sans-serif;
+}
+
  
