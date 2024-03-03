@@ -28,10 +28,14 @@
 <option value="med" id="med" class="med">Mediterranean</option>
 <option value="polar" id="polar" class="polar">Polar</option>
     </select>
+    <div id="output-container">
+      <label for="output">Score: </label>
+      <div id="output"></div>
+    </div>
     <br><br>
     </div>
     <div class="buttonHolder" id="buttonHolder">
-      <br><button type="button" class="button" id="button">Submit</button></br>
+      <br><button type="button" class="button" id="button" onclick="doUpdate()">Submit</button></br>
     </div>
     <div class="links" id="links">
         <button type="button" class="linkPrompt" id="linkPronpt" onclick="toggleLinks()">Other Pages</button>
