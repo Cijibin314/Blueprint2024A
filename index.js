@@ -1,4 +1,4 @@
-const api_key = "sk-qLwq65e4bc5dc81e24444"
+const api_key = "sk-93K765e4ec4f684394449"
 async function getData(id){
     return fetch(`https://perenual.com/api/species/details/${id}?key=${api_key}`).then(
         (res)=>{return res.json()}
@@ -110,5 +110,6 @@ async function fillObj(){
 }
 setTimeout(()=>{fillObj()},200)
 async function doUpdate(){
+    
     document.getElementById("output").innerHTML = await evaluateScoreFinal(document.getElementById("f1"))
 }
