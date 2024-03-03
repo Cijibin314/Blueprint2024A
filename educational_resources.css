@@ -1,0 +1,49 @@
+body {
+   font-family: Arial, sans-serif;
+   background-color: #f0f9f4;
+   margin: 0;
+   padding: 20px;
+}
+
+
+.container {
+   max-width: 800px;
+   margin: auto;
+}
+
+
+h1 {
+   color: #336633;
+}
+
+
+.resources {
+   margin-top: 20px;
+}
+
+
+.resource {
+   display: block;
+   background-color: #e7efe6;
+   color: #000;
+   padding: 20px;
+   margin-bottom: 20px;
+   border-radius: 8px;
+   text-decoration: none;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.resource h2 {
+   margin-top: 0;
+}
+
+
+.resource p {
+   font-size: 16px;
+}
+
+
+.resource:hover {
+   background-color: #dfeee5;
+}
