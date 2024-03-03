@@ -100,7 +100,7 @@ a.l1{
    color: black;
    font-family: 'Times New Roman', Times, serif;
 }
-/*
+
 a.l2{
     background-color: rgb(16, 184, 80);
     border-color: black;
@@ -124,7 +124,19 @@ a.l2{
     color: black;
     font-family: 'Times New Roman', Times, serif;
  }
-*/
+
+ a.l4{
+    background-color: rgb(16, 184, 80);
+    border-color: black;
+    position : absolute;
+    top:288px;
+    right:0px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
 button.linkPrompt{
     position : absolute;
     top:150px;
@@ -132,3 +144,4 @@ button.linkPrompt{
     font-size : 24px;
     font-family: 'Times New Roman', Times, serif;
 }
+
