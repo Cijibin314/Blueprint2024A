@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Environmental Login/Signup</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+<body>
+   <div class="container">
+       <div class="form-container">
+           <div class="form-header">
+               <button id="loginFormButton">Login</button>
+               <button id="signupFormButton">Sign Up</button>
+           </div>
+           <div id="loginForm" class="form-body">
+               <input type="email" placeholder="Email" required>
+               <input type="password" placeholder="Password" required>
+               <button type="submit" onclick = getMain()>Login</button>
+           </div>
+           <div id="signupForm" class="form-body hidden">
+               <input type="email" placeholder="Email" required>
+               <input type="password" placeholder="Password" required>
+               <button type="submit" onclick = getMain()>Sign Up</button>
+           </div>
+       </div>
+   </div>
+   <script src="login.js"></script>
+</body>
+</html>
