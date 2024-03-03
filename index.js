@@ -1,4 +1,4 @@
-const api_key = "sk-93K765e4ec4f684394449"
+const api_key = "93K765e4ec4f684394449"
 async function getData(id){
     return fetch(`https://perenual.com/api/species/details/${id}?key=${api_key}`).then(
         (res)=>{return res.json()}
