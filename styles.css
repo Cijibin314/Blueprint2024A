@@ -1,5 +1,12 @@
 body{
+    /*
     background-color : #09ad35;
+    */
+    background-image: url("https://s3.amazonaws.com/assets.cce.cornell.edu/slides/6250/image/sized/lawn.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    background-attachment: fixed;
 }
 
 h1.header{
@@ -28,6 +35,7 @@ a.l1{
    position : absolute;
    top:183px;
    right:0px;
+   font-size: 28px;
 }
 
 button.linkPrompt{
