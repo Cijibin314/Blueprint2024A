@@ -24,5 +24,21 @@
     <div class="buttonHolder" id="buttonHolder">
       <br><button type="button" class="button" id="button">Submit</button></br>
     </div>
+    <div class="links" id="links">
+        <button type="button" class="linkPrompt" id="linkPronpt" onclick="toggleLinks()">Other Pages</button>
+        <div class="link1" id="link1">
+        <a class="l1" id="l1" href="https://www.fortnite.com/">Dummy Link</a>
+        </div>
+    </div>
+    <script>
+        function toggleLinks(){
+            if(document.getElementById("link1").style.display=="none"){
+                document.getElementById("link1").style.display="block";
+            }
+            else{
+                document.getElementById("link1").style.display="none";
+            }
+        }
+    </script>
   </body>
 </html>
