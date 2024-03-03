@@ -2,31 +2,25 @@ body{
     /*
     background-color : #09ad35;
     */
-    background-image: url("https://s3.amazonaws.com/assets.cce.cornell.edu/slides/6250/image/sized/lawn.jpg");
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position: bottom;
-    background-attachment: fixed;
+    font-family: 'Roboto Mono';
+    background-color:rgb(109, 234, 109)
 }
 
 h1.header{
     text-align: center;
-    background-color : green;
-    font-family: 'Times New Roman', Times, serif;
+    
     border-radius: 20px;
 }
 
 p.desc{
     text-align: center;
-    background-color : #1a7e0fce;
+    
     border-radius: 22px;
     font-size : 20px;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 div.input{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 input.f1{
@@ -86,7 +80,6 @@ button.button{
 }
 div.buttonHolder{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 a.l1{
@@ -98,9 +91,8 @@ a.l1{
    font-size: 24px;
    text-decoration: none;
    color: black;
-   font-family: 'Times New Roman', Times, serif;
 }
-
+/*
 a.l2{
     background-color: rgb(16, 184, 80);
     border-color: black;
@@ -124,24 +116,111 @@ a.l2{
     color: black;
     font-family: 'Times New Roman', Times, serif;
  }
-
- a.l4{
-    background-color: rgb(16, 184, 80);
-    border-color: black;
-    position : absolute;
-    top:288px;
-    right:0px;
-    font-size: 24px;
-    text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
- }
-
+*/
 button.linkPrompt{
     position : absolute;
     top:150px;
     right:0px;
     font-size : 24px;
-    font-family: 'Times New Roman', Times, serif;
 }
-
+#footer-container{
+    display:flex;
+    justify-content: center;
+}
+#footer{
+    position:absolute;
+    bottom:20px;
+    font-size:large;
+}
+#topBar{
+    background-color: #65B87B;
+    border-radius: 10%;
+}
+input{
+    border-radius: 60%;
+}
+#button{
+    border-radius: 60%;
+}
+#options{
+    border-radius: 60%;
+}
+#desc{
+    position:absolute;
+    left:0px;
+    top:100px;
+}
+#paragraphContainer{
+    position:absolute;
+    left:150px;
+    top:100px;
+    width:300px;
+    height:400px;
+}
+a.l1{
+    background-color: rgb(16, 184, 80);
+    border-color: black;
+    position : absolute;
+    top:40px;
+    right:55px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius:8px;
+ }
+ 
+ 
+ a.l2{
+     background-color: rgb(16, 184, 80);
+     border-color: black;
+     position : absolute;
+     top:75px;
+     right:80px;
+     font-size: 24px;
+     text-decoration: none;
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+     border-radius:8px;
+  }
+ 
+ 
+  a.l3{
+     background-color: rgb(16, 184, 80);
+     border-color: black;
+     position : absolute;
+     top:110px;
+     right:10px;
+     font-size: 24px;
+     text-decoration: none;
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+     border-radius:8px;
+  }
+ a.l4{
+     background-color: rgb(16, 184, 80);
+     border-color: black;
+     position : absolute;
+     top:145px;
+     right:60px;
+     font-size: 24px;
+     text-decoration: none;
+     color: black;
+     font-family: 'Times New Roman', Times, serif;
+     border-radius:8px;
+  }
+ #myLabel{
+    position:absolute;
+    top:100px;
+    left:150px;
+ }
+ #linkPronpt{
+    position:absolute;
+    top:0px;
+    right:35px;
+ }
+ #name-container{
+    position:absolute;
+    left:30px;
+    top:4px;
+ }
