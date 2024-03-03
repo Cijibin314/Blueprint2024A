@@ -1,42 +1,111 @@
-// before changes
+const api_key = "sk-qLwq65e4bc5dc81e24444"
 async function getData(id){
-    return fetch(`https://perenual.com/api/species/details/${id}?key=sk-XLdE65e4881903b474433`).then(
+    return fetch(`https://perenual.com/api/species/details/${id}?key=${api_key}`).then(
         (res)=>{return res.json()}
     )
 }
-/*const myVar = getData(1)
-console.log(myVar["care_level"])*/
-//console.log((await getData(1))["care_level"])
-
 class Plant{
     constructor(plantName){
-        
-            this.name = plantName
-        // finds id
+        this.name = plantName
+        // sets id
         this.id=100
-        //for(let i = 0; i < 1; i++){
-            getData(5).then((result)=>{
-                console.log(result)
-                if((result["common_name"] === plantName) || (result["scientific_name"] === plantName)){
-                    this.id = 5
+        for(let i = 1; i < 31; i++){
+            for(let name of myNamesToIds[i]){
+                if(name === plantName){
+                    this.id = i
                 }
-            })
-            // busy work
-            /*for(let i = 0; i < 1000; i++){
-                const l = Math.sqrt(i + 12 * 15) 
-            }*/
-        //}
-        if(this.id === 100){
-            this.id = 0
+            }
         }
-        console.log(this.id)
-        
+        if(this.id === 100){
+            this.id=30
+        }
+    }
+    evaluateScore(){
+        const data = getData(this.id)
+        console.log(data)
     }
 }
-
-
-function getMainData(){
-    return fetch("https://perenual.com/api/species-list?key=sk-XLdE65e4881903b474433").then(
-        (res)=>{return res.json()}
-    )
+function getId(plantName){
+    let id=100
+        for(let i = 1; i < 31; i++){
+            for(let name of myNamesToIds[i]){
+                if(name === plantName){
+                    id = i
+                }
+            }
+        }
+        if(id === 100){
+            id=30
+        }
+    return id
 }
+let listOfScores = []
+async function evaluateScore(id){
+    console.log("input id:    " + id)
+    
+    getData(id).then((data)=>{
+    let score = 0;
+    // checks
+    if(data["watering"] === "Frequent"){
+        score--;
+    }
+    if(data["watering"] === "Infrequent"){
+        score++;
+    }
+    score += data["attracts"].length
+    score -= data["pruning_month"].length / 4
+    const propogation = data["propogation"]
+    try{
+        for(const method of propogation){
+            switch(method){
+                case "Cutting":
+                    score--;
+                    break;
+                case "Layering Propagation":
+                    score += 0.5;
+                    break;
+                case "Seed Propogation":
+                    score += 1;
+                    break;
+            }
+        }
+    }catch(e){}
+    console.log(score)
+    score += 1
+    score -= 1
+    return score;
+    })
+    
+}
+function evaluateScoreFinal(name){
+    const result = evaluateScore(getId(name))
+    setTimeout(()=>{console.log(result)},5000)
+    return result
+}
+function getMainData(){
+    return fetch(`https://perenual.com/api/species-list?key=${api_key}`).then((res)=>{
+        return res.json()
+    })
+}
+async function getAllData(){
+    const result = await getMainData()
+    const obj = await result["data"]
+    return obj
+}
+let myNamesToIds = {}
+async function fillObj(){
+    const data = await getAllData()
+    for(let i = 0; i < 30;i++){
+        const plantData = data[i]
+        let names = []
+        for(const name of plantData["other_name"]){
+            names.push(name)
+        }
+        for(const name of plantData["scientific_name"]){
+            names.push(name)
+        }
+        names.push(plantData["common_name"])
+        myNamesToIds[i + 1] = names
+    }
+}
+setTimeout(()=>{fillObj()},200)
