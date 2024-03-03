@@ -8,12 +8,18 @@
   </head>
   <body>
     <script src="index.js"></script>
+    <div id="topBar">
     <h1 class="header" id="header">
       How Sustainable Is Your Lawn?
     </h1>
-    <p class="desc" id="desc">
-      The average American lawn uses about 44,000 to 65,000 gallons of water and about 2 to 6 pounds of pesticides per year, leading to concern about the effect of lawn care on the climate. Take this form and see how you lawn may affect the environment!
-    </p>
+    
+  </div>
+  <!--<div id="paragraphContainer">
+    <label for="desc" id="myLabel">Info:</label>
+  <p class="desc" id="desc">
+    The average American lawn uses about 44,000 to 65,000 gallons of water and about 2 to 6 pounds of pesticides per year, leading to concern about the effect of lawn care on the climate. Take this form and see how you lawn may affect the environment!
+  </p>
+</div>-->
     <div class="input" id="input">
         <h3 class="p1" id="p1">Input grass used</h3>
     <input type="text" class="f1" id="f1">
@@ -28,24 +34,16 @@
 <option value="med" id="med" class="med">Mediterranean</option>
 <option value="polar" id="polar" class="polar">Polar</option>
     </select>
-    <div id="output-container">
-      <label for="output">Score: </label>
+    <div id="score-container">
+      <label for="output" id="output-label">Score: </label>
       <div id="output"></div>
     </div>
     <br><br>
     </div>
     <div class="buttonHolder" id="buttonHolder">
-      <br><button type="button" class="button" id="button" onclick="doUpdate()">Submit</button></br>
+      <br><button type="button" class="button" id="button" onclick="showOutput()">Submit</button></br>
     </div>
-    <div class="links" id="links">
-        <button type="button" class="linkPrompt" id="linkPronpt" onclick="toggleLinks()">Other Pages</button>
-        <div class="link1" id="link1">
-        <a class="l1" id="l1" href="funfacts.html">Fun Facts</a>
-        <a class="l2" id="l2" href="quiz.html">Quiz</a>
-        <a class="l3" id="l3" href="educational_resources.html">Educational Resources</a>
-        <a class="l4" id="l4" href="aboutus.html">About Us</a>
-        </div>
-    </div>
+    
     <script>
         function toggleLinks(){
             if(document.getElementById("link1").style.display=="none"){
@@ -56,5 +54,24 @@
             }
         }
     </script>
+    <script src="index.js"></script>
+    <div id="footer-container">
+      <footer id="footer">By Romir, Suchir, Cole, and Nathan</footer>
+  </div>
+  <div class="links" id="links">
+    <button type="button" class="linkPrompt" id="linkPronpt" onclick="toggleLinks()">Other Pages</button>
+    <div class="link1" id="link1">
+      <a class="l1" id="l1" href="funfacts.html">Fun Facts</a>
+      <br>
+        <a class="l2" id="l2" href="quiz.html">Quiz</a>
+        <br>
+        <a class="l3" id="l3" href="educational_resources.html">Educational Resources</a>
+        <br>
+        <a class="l4" id="l4" href="aboutus.html">About Us</a>
+    </div>
+</div>
+<div id="name-container">
+<h1>Greenroot Collective</h1>
+</div>
   </body>
 </html>
