@@ -1,3 +1,34 @@
+body{
+    /*
+    background-color : #09ad35;
+    */
+    background-image: url("https://s3.amazonaws.com/assets.cce.cornell.edu/slides/6250/image/sized/lawn.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+h1.header{
+    text-align: center;
+    background-color : green;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+p.desc{
+    text-align: center;
+    background-color : #1a7e0fce;
+    border-radius: 22px;
+    font-size : 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.input{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
 input.f1{
     padding: 12px 15px;
     margin-bottom: 0;
@@ -36,6 +67,16 @@ option.tropical{
 }
 
 option.polar{
+    padding: 12px 50px;
+    font-size: 15px;
+}
+
+option.temperate{
+    padding: 12px 50px;
+    font-size: 15px;
+}
+
+option.med{
     padding: 12px 50px;
     font-size: 15px;
 }
