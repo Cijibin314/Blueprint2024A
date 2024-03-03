@@ -36,5 +36,3 @@ document.getElementById('funFactForm').addEventListener('submit', function(event
    // window.location.href = 'funfacts.html';
  //}
  
- 
- 

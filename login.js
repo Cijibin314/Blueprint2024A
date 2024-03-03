@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
  
  
  function getMain() {
-    window.location.href = "pageDirectory.html"
+    window.location.href = "funfacts.html"
  }
+ 
+ 
  
