@@ -8,7 +8,7 @@ document.getElementById('feedbackForm').addEventListener('submit', function(even
    // Display a thank you message or handle the feedback data as needed.
   
    alert('Thank you for submitting your feedback!')
-   window.location.replace("funfacts.html")
+   window.location.replace("pageDirectory.html")
 
 
 
