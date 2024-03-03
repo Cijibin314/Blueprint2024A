@@ -11,24 +11,39 @@ body{
 
 h1.header{
     text-align: center;
-    background-color: #1a7e0fce;
+    background-color : green;
     font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
 }
 
 p.desc{
     text-align: center;
     background-color : #1a7e0fce;
-    border-radius: 12px;
-    font-size : 20px
-    
-
+    border-radius: 22px;
+    font-size : 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 div.input{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+input.f1{
+    padding: 12px 15px;
 }
 
+input.f2{
+    padding: 12px 15px;
+}
+
+input.f3{
+    padding: 12px 15px;
+}
+
+button.button{
+    padding: 12px 30px;
+}
 div.buttonHolder{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
