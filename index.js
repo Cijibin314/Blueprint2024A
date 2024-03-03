@@ -109,3 +109,6 @@ async function fillObj(){
     }
 }
 setTimeout(()=>{fillObj()},200)
+async function doUpdate(){
+    document.getElementById("output").innerHTML = await evaluateScoreFinal(document.getElementById("f1"))
+}
